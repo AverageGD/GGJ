@@ -10,6 +10,7 @@ public class DialogueTrigger : Interactable
     [SerializeField] private GameObject _jokeBox;
     [SerializeField] private GameObject _spriteBillboard;
     [SerializeField] private Material _normalMaterial;
+    [SerializeField] private Sprite _normalSprite;  
     [SerializeField] private float _delayTime;
 
     public int dialogueIndex = 0;
@@ -77,6 +78,7 @@ public class DialogueTrigger : Interactable
         if (isDead)
         {
             _spriteBillboard.GetComponent<SpriteRenderer>().material = _normalMaterial;
+            _spriteBillboard.GetComponent<SpriteRenderer>().sprite = _normalSprite;
         }
     }
 }
