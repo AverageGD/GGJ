@@ -29,7 +29,8 @@ public class PlayerMovement : MonoBehaviour
         else
             _spriteRenderer.flipX = true;
 
-        _rb.velocity = movement * _speed;    
+        transform.Translate(movement * _speed * Time.deltaTime);
+        //_rb.velocity = movement * _speed;    
 
     }
 

@@ -18,6 +18,7 @@ public class DialogueTrigger : Interactable
     public bool isDead = false;
     public int id;
     public int rightAnswer;
+    public int itemId;
 
     private float lastClickTime = 0;
     private int indexOfCurrentSentence = 0;
@@ -34,6 +35,7 @@ public class DialogueTrigger : Interactable
                 _jokeButtons[i].GetComponent<Text>().text = _jokes[i].sentences[0];
                 _jokeButtons[i].GetComponent<JokeLogics>().id = i;
                 _jokeButtons[i].GetComponent<JokeLogics>().enemyId = id;
+                _jokeButtons[i].GetComponent<JokeLogics>().itemId = itemId;
             }
 
             if (indexOfCurrentSentence == 0)

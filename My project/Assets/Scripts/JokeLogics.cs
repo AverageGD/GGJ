@@ -6,9 +6,10 @@ public class JokeLogics : MonoBehaviour
 {
     public int id;
     public int enemyId;
+    public int itemId;
 
     public void CheckAnswer()
     {
-        EnemyManager.instance.CheckAnswer(enemyId, id);
+        EnemyManager.instance.CheckAnswer(enemyId, id, itemId);
     }
 }
