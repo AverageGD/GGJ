@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 3
   name: Selfie stick
-  sprite: {fileID: 21300000, guid: b254caaaab08a3f44a96b4864a56a50a, type: 3}
+  sprite: {fileID: 21300000, guid: 0de87dd5b46408148827e5a4f6706f1b, type: 3}

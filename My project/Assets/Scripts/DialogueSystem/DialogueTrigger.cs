@@ -22,6 +22,7 @@ public class DialogueTrigger : Interactable
 
     private float lastClickTime = 0;
     private int indexOfCurrentSentence = 0;
+    private AudioSource source;
 
 
     public override void Interact()
@@ -82,5 +83,10 @@ public class DialogueTrigger : Interactable
             _spriteBillboard.GetComponent<SpriteRenderer>().material = _normalMaterial;
             _spriteBillboard.GetComponent<SpriteRenderer>().sprite = _normalSprite;
         }
+    }
+
+    private void Start()
+    {
+        source = GetComponent<AudioSource>();
     }
 }

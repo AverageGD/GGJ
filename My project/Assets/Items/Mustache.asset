@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 2
   name: Mustache
-  sprite: {fileID: 21300000, guid: b254caaaab08a3f44a96b4864a56a50a, type: 3}
+  sprite: {fileID: 21300000, guid: 4eb9b61d9d0adfc4eb041b63f0b1ab91, type: 3}
